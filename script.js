@@ -1,5 +1,7 @@
 let randomNumber = Math.floor(Math.random()) + 1;
 
+console.log(randomNumber);
+
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
@@ -35,7 +37,8 @@ function checkGuess() {
       lowOrHi.textContent = 'Last guess was too high!';
     }
   }
-
+ 
+  
   guessCount++;
   guessField.value = '';
   guessField.focus();
@@ -68,4 +71,5 @@ function resetGame() {
     lastResult.style.backgroundColor = 'white';
 
     randomNumber = Math.floor(Math.random()) + 1;
-}
+    console.log(randomNumber);
+  }
