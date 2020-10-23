@@ -2,7 +2,8 @@ let randomNumber = Math.floor(Math.random()) + 1;
 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
-const lowOrHi = document.querySelector('lowOrHi');
+const lowOrHi = document.querySelector('.lowOrHi');
+// console.log(lowOrHi);
 const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 
@@ -47,7 +48,7 @@ function setGameOver() {
     resetButton = document.createElement('button');
     resetButton.textContent = 'Start new game';
     document.body.appendChild(resetButton);
-    resetButton.addeventListener('click', resetGame);
+    resetButton.addEventListener('click', resetGame);
 }
 
 function resetGame() {
