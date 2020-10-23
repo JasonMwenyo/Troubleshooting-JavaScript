@@ -38,7 +38,8 @@ function checkGuess() {
     }
   }
  
-  
+
+
   guessCount++;
   guessField.value = '';
   guessField.focus();
@@ -73,3 +74,5 @@ function resetGame() {
     randomNumber = Math.floor(Math.random()) + 1;
     console.log(randomNumber);
   }
+
+  //Testing git authentication
