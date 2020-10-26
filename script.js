@@ -10,7 +10,7 @@ const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 
 let guessCount = 1;
-let resetButton;
+let resetButton ;
 
 function checkGuess() {
 
